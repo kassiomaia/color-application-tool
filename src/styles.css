@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "Comfortaa-Regular";
+  src: url("%PUBLIC_URL%/fonts/Comfortaa-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Comfortaa-Bold";
+  src: url("%PUBLIC_URL%/fonts/Comfortaa-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Comfortaa-Light";
+  src: url("%PUBLIC_URL%/fonts/Comfortaa-Light.ttf");
+}
+
+@font-face {
+  font-family: "Comfortaa-SemiBold";
+  src: url("%PUBLIC_URL%/fonts/Comfortaa-SemiBold.ttf");
+}
+
+p {
+  font-family: "Comfortaa-Regular";
+}
+
+small {
+  display: block;
+  font-family: "Comfortaa-Light";
+  font-size: 0.6em;
+}
+
+label {
+  font-family: "Comfortaa-Bold";
+  font-weight: bold;
+}
+
+label {
+  font-family: "Comfortaa-Regular";
+}
+
+h1 {
+  font-family: Comfortaa-Bold;
+  font-size: 1.5em;
+  color: white;
+}
+
+body {
+  font-family: "Comfortaa-Regular";
+  background-color: black;
+  padding: 10px;
+}
+
+.application {
+  display: grid;
+  grid-template-columns: 3fr 1fr 10px;
+  grid-template-rows: 50px calc(100vh - 260px) 160px;
+  grid-gap: 10px;
+}
+
+.header {
+  background-color: black;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.content {
+  grid-column: 1;
+  grid-row: 2;
+  overflow: auto;
+}
+
+.color-combination {
+  display: grid;
+  grid-template-columns: 3fr 1fr 10px;
+  grid-template-rows: 10% 90%;
+  grid-gap: 10px;
+  background-color: #1d1d1d;
+  border: 1px solid gray;
+  padding: 1em;
+  color: white;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row: 3;
+}
+
+.color-combination > label {
+  grid-row: 1;
+}
+
+.color-combination .color-grid {
+  display: flex;
+  overflow: auto;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.color-combination .color-grid .color-box-detail small {
+  width: 12em;
+}
+
+.lightness-levels {
+  overflow: auto;
+  grid-column: 3;
+  grid-row: 2;
+  line-height: 0px;
+}
